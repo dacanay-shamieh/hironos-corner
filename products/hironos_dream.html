@@ -27,6 +27,54 @@
         <p style="font-size: 20px">A sweet and dreamy non-coffee beverage made with creamy milk, smooth vanilla, and white chocolate. Its soft and delicate flavor creates a comforting drink that feels like a little escape from the busy world. Hirono’s Dream is perfect for anyone who prefers a gentle, sweet drink while spending a peaceful moment at the corner.</p>
       </td>
   </table>
+
+  <main>
+    <form>
+      <fieldset>
+        <legend style="text-align: center;">Make It Yours</legend>
+        
+        <p>
+          <legend>How Many?</legend>
+        </p>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+        
+        <p>
+          <legend>How Will You Receive It?</legend>
+        </p>
+        
+        <p>
+          <input type="radio" id="d2" name="delivery" value="pickup">
+          <label for="d2">Store Pickup (Pick up at Hirono's Corner)</label>
+        </p>
+        <p>
+          <input type="radio" id="d1" name="delivery" value="deliver">
+          <label for="d1">Local Delivery (Have it delivered to you)</label>
+        </p>
+        
+        <legend>Make It Extra Special</legend>
+        <p>
+          <input type="checkbox" id="extra1" name="gift" value="wrapping">
+          <label for="item1">Gift Wrapping</label>
+        </p>
+        <p>
+          <input type="checkbox" id="extra2" name="add" value="little note">
+          <label for="item1">Add a Little Note</label>
+        </p>
+        <p>
+          <input type="checkbox" id="extra3" name="hirono-themed" value="packaging">
+          <label for="item1">Hirono-themed Packaging</label>
+        </p>
+        
+        <p>
+          <label for="name">Contact email</label><br>
+          <input type="email" id="name" name="name" required>
+        </p>
+        
+        <button type="submit">Send enquiry</button>
+      </fieldset>
+    </form>
+
 </body>
 
 </html>

@@ -27,6 +27,54 @@
         <p style="font-size: 20px">A rich and moist slice of chocolate cake layered with smooth chocolate cream for an indulgent dessert experience. Its deep cocoa flavor and soft texture make it a satisfying treat for chocolate lovers. Enjoy it with a warm coffee or share it with someone special while spending time in your little corner.</p>
       </td>
   </table>
+  
+  <main>
+    <form>
+      <fieldset>
+        <legend style="text-align: center;">Make It Yours</legend>
+        
+        <p>
+          <legend>How Many?</legend>
+        </p>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+        
+        <p>
+          <legend>How Will You Receive It?</legend>
+        </p>
+        
+        <p>
+          <input type="radio" id="d2" name="delivery" value="pickup">
+          <label for="d2">Store Pickup (Pick up at Hirono's Corner)</label>
+        </p>
+        <p>
+          <input type="radio" id="d1" name="delivery" value="deliver">
+          <label for="d1">Local Delivery (Have it delivered to you)</label>
+        </p>
+        
+        <legend>Make It Extra Special</legend>
+        <p>
+          <input type="checkbox" id="extra1" name="gift" value="wrapping">
+          <label for="item1">Gift Wrapping</label>
+        </p>
+        <p>
+          <input type="checkbox" id="extra2" name="add" value="little note">
+          <label for="item1">Add a Little Note</label>
+        </p>
+        <p>
+          <input type="checkbox" id="extra3" name="hirono-themed" value="packaging">
+          <label for="item1">Hirono-themed Packaging</label>
+        </p>
+        
+        <p>
+          <label for="name">Contact email</label><br>
+          <input type="email" id="name" name="name" required>
+        </p>
+        
+        <button type="submit">Send enquiry</button>
+      </fieldset>
+    </form>
+  
 </body>
 
 </html>
