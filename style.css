@@ -1,0 +1,70 @@
+:root {
+    --brand-color: #87CEEB;
+    --dark-ink: #000000;
+    --muted-grey: #666666;
+    --light-background: #bcdffd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: Papyrus, fantasy, sans-serif;
+    color: var(--dark-ink);
+    font-size: 36px;
+}
+
+p, h2, h3, form, input, button {
+    font-family: Perpetua, serif, sans-serif;
+    color: var(--dark-ink);
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    color: var(--dark-ink);
+    line-height: 1.6;
+    background-color: var(--light-background);
+}
+
+header {
+    background-color: var(--brand-color);
+    color: var(--dark-ink);
+}
+
+main {
+    background-color: var(--light-background);
+} 
+
+footer {
+
+    background-color: var(--brand-color);
+}
+
+.product-card {
+    background-color: var(--light-background);
+    color: var(--dark-ink);
+    border: 1px solid var(--muted-grey);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+nav {
+    background-color: var(--brand-color);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-ink);
+}
