@@ -52,8 +52,6 @@ footer {
 
 nav {
     background-color: var(--brand-color);
-    justify-content: center;
-    align-items: center;
 }
 
 nav ul {
@@ -62,7 +60,7 @@ nav ul {
 }
 
 nav li {
-    display: inline;
+    display: inline-block;
     margin-right: 10px;
 }
 
