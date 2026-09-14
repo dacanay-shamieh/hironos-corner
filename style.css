@@ -57,7 +57,7 @@ footer {
     border-left: 5px solid var(--muted-grey);
     padding: 16px;
     margin-bottom: 16px;
-    flex: 1;
+    flex: 1 1 240px;
     height: 700px;
     display: flex;
     flex-direction: column;
@@ -66,9 +66,10 @@ footer {
     text-align: center;
 }
 
-.product-container {
+.product-grid {
     display: flex;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .product-card h3 {
