@@ -192,8 +192,8 @@ header ul {
   grid-template-columns: 1fr;
   grid-template-areas:
     "masthead"
-    "side"
     "main"
+    "side"
     "foot";
   gap: 16px;
 }
