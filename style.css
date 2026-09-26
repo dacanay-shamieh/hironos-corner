@@ -58,7 +58,7 @@ footer {
     padding: 16px;
     margin-bottom: 16px;
     flex: 1 1 240px;
-    height: 700px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,6 +87,8 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
     font-size: 20px;
 }
 
@@ -132,10 +134,19 @@ button {
 
 .site-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: var(--brand-color);
+}
+
+@media (min-width: 700px) {
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
 }
 
 .site-brand {
@@ -153,7 +164,9 @@ button {
 
 .site-header nav ul {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
 a {
@@ -176,11 +189,12 @@ header ul {
 
 .page-body {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "masthead masthead"
-    "side main"
-    "foot foot";
+    "masthead"
+    "side"
+    "main"
+    "foot";
   gap: 16px;
 }
 
@@ -198,4 +212,14 @@ main {
 
 footer {
     grid-area: foot;
+}
+
+@media (min-width: 700px) {
+    .page-body {
+        grid-template-columns: 220px 1fr;
+        grid-template-areas:
+            "masthead masthead"
+            "side main"
+            "foot foot";
+    }
 }
