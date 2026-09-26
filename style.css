@@ -155,3 +155,47 @@ button {
     display: flex;
     gap: 20px;
 }
+
+a {
+    text-decoration: none;
+    color: var(--dark-ink);
+}
+
+aside {
+    text-align: center;
+}
+
+aside ul {
+    list-style: none;
+    text-align: left;
+}
+
+header ul {
+    list-style: none;
+}
+
+.page-body {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-areas:
+    "masthead masthead"
+    "side main"
+    "foot foot";
+  gap: 16px;
+}
+
+header {
+    grid-area: masthead; 
+}
+
+aside {
+    grid-area: side;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: foot;
+}
