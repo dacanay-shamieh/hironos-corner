@@ -211,6 +211,7 @@ main {
 
 footer {
     grid-area: foot;
+    text-align: center;
 }
 
 @media (min-width: 700px) {
