@@ -180,6 +180,6 @@ if (shopStatusElement) {
 }
 
 //Console
-console.log('Shop Name: ', shopName);
-console.log('Current Year: ', currentYear);
-console.log('Total Products: ', total);
+console.log("Shop Name: ", shopName);
+console.log("Current Year: ", currentYear);
+console.log("Total Products: ", total);
